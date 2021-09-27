@@ -24,7 +24,7 @@ namespace Basket.API.Entities
         public decimal TotalPrice 
         {
             get {
-                return Items.Sum(item => item.Quantity);
+                return Items.Sum(item => item.Price);
             }
         }
     }
